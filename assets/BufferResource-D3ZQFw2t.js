@@ -1,4 +1,4 @@
-import{v as U,x as g,y as c,z as S,B as _,A as m,E as I,C as p}from"./index-BHa-0as-.js";const x={name:"local-uniform-bit",vertex:{header:`
+import{s as U,v as g,x as c,y as S,B as _,z as m,E as I,A as p}from"./index-e3P__OuO.js";const x={name:"local-uniform-bit",vertex:{header:`
 
             struct LocalUniforms {
                 uTransformMatrix:mat3x3<f32>,
@@ -15,7 +15,7 @@ import{v as U,x as g,y as c,z as S,B as _,A as m,E as I,C as p}from"./index-BHa-
             {
                 vPosition = vec4(roundPixels(vPosition.xy, globalUniforms.uResolution), vPosition.zw);
             }
-        `}},C={...x,vertex:{...x.vertex,header:x.vertex.header.replace("group(1)","group(2)")}},A={name:"local-uniform-bit",vertex:{header:`
+        `}},A={...x,vertex:{...x.vertex,header:x.vertex.header.replace("group(1)","group(2)")}},C={name:"local-uniform-bit",vertex:{header:`
 
             uniform mat3 uTransformMatrix;
             uniform vec4 uColor;
@@ -182,4 +182,4 @@ import{v as U,x as g,y as c,z as S,B as _,A as m,E as I,C as p}from"./index-BHa-
         data[offset + 1] = v[1];
         data[offset + 2] = v[2];
         data[offset + 3] = v[3];
-    `};class P extends I{constructor({buffer:t,offset:a,size:s}){super(),this.uid=p("buffer"),this._resourceType="bufferResource",this._touched=0,this._resourceId=p("resource"),this._bufferResource=!0,this.destroyed=!1,this.buffer=t,this.offset=a|0,this.size=s,this.buffer.on("change",this.onBufferChange,this)}onBufferChange(){this._resourceId=p("resource"),this.emit("change",this)}destroy(t=!1){this.destroyed=!0,t&&this.buffer.destroy(),this.emit("change",this),this.buffer=null,this.removeAllListeners()}}export{P as B,l as G,B as U,x as a,F as b,k as c,h as d,R as e,A as f,O as g,C as l,D as t,w as u};
+    `};class P extends I{constructor({buffer:t,offset:a,size:s}){super(),this.uid=p("buffer"),this._resourceType="bufferResource",this._touched=0,this._resourceId=p("resource"),this._bufferResource=!0,this.destroyed=!1,this.buffer=t,this.offset=a|0,this.size=s,this.buffer.on("change",this.onBufferChange,this)}onBufferChange(){this._resourceId=p("resource"),this.emit("change",this)}destroy(t=!1){this.destroyed=!0,t&&this.buffer.destroy(),this.emit("change",this),this.buffer=null,this.removeAllListeners()}}export{P as B,l as G,B as U,x as a,F as b,k as c,h as d,R as e,C as f,O as g,A as l,D as t,w as u};
